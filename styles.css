@@ -4,6 +4,7 @@ body {
   text-align: center;
   background-color: #011F3F;
   width: 100vw;
+  min-height: 600px;
   padding: 0px;
   margin: 0px;
 }
@@ -23,10 +24,10 @@ body {
 }
 
 .container {
-  position: fixed;
+  /* position: absolute;
   top: 25%;
   left: 25%;
-  right: 25%;
+  right: 25%; */
   display: flex;
   justify-content: center;
   max-width: 60%;
@@ -47,6 +48,7 @@ body {
   width: 250px;
   border: 10px solid black;
   border-radius: 20%;
+  cursor: pointer;
 }
 
 .game-over {
@@ -79,10 +81,28 @@ body {
   background-color: grey;
 }
 
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+}
+
+#footer-text {
+  font-family: consolas;
+  font-size: 0.8em;
+  color: #FEF2BF;
+  background: linear-gradient(rgb(186, 0, 186) 10%, rgb(122, 0, 106) 80%, rgba(255,255,255,.1) 100%);
+  border-radius: 20px 20px 0% 0%;
+  padding: 5px;
+  margin: auto;
+}
+
 @media screen and (max-width: 768px) {
   .divider {
     display: block;
-    height: 100px;
+    height: 50px;
   }
 
   #level-title {
